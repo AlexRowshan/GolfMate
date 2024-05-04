@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D15CC9832BE0ED3C001DEA58 /* ScorecardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC9822BE0ED3C001DEA58 /* ScorecardView.swift */; };
+		D15CC9852BE19C35001DEA58 /* ScorecardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC9842BE19C35001DEA58 /* ScorecardViewModel.swift */; };
+		D15CC9872BE1AE26001DEA58 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D15CC9862BE1AE26001DEA58 /* FirebaseFirestoreSwift */; };
+		D15CC9892BE1E85B001DEA58 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC9882BE1E85B001DEA58 /* StatsViewModel.swift */; };
+		D15CC98C2BE20F58001DEA58 /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC98B2BE20F58001DEA58 /* HealthKitViewModel.swift */; };
+		D15CC9922BE23E1A001DEA58 /* RoundHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC9912BE23E1A001DEA58 /* RoundHistoryView.swift */; };
+		D15CC9942BE23E33001DEA58 /* RoundHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC9932BE23E33001DEA58 /* RoundHistoryViewModel.swift */; };
+		D15CC9972BE2427B001DEA58 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = D15CC9962BE2427B001DEA58 /* DGCharts */; };
+		D15CC9992BE2427B001DEA58 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D15CC9982BE2427B001DEA58 /* DGChartsDynamic */; };
+		D15CC99D2BE2F251001DEA58 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CC99C2BE2F250001DEA58 /* CalenderView.swift */; };
+		D18DB7192BE0600B00640F47 /* FinalProject342App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DB7182BE0600B00640F47 /* FinalProject342App.swift */; };
+		D18DB71B2BE0600B00640F47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DB71A2BE0600B00640F47 /* ContentView.swift */; };
+		D18DB71D2BE0600C00640F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18DB71C2BE0600C00640F47 /* Assets.xcassets */; };
+		D18DB7202BE0600C00640F47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18DB71F2BE0600C00640F47 /* Preview Assets.xcassets */; };
+		D18DB72A2BE0602F00640F47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D18DB7292BE0602F00640F47 /* GoogleService-Info.plist */; };
+		D18DB72D2BE060B500640F47 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB72C2BE060B500640F47 /* FirebaseAnalytics */; };
+		D18DB72F2BE060B500640F47 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB72E2BE060B500640F47 /* FirebaseAppCheck */; };
+		D18DB7312BE060B500640F47 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB7302BE060B500640F47 /* FirebaseAuth */; };
+		D18DB7332BE060B500640F47 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB7322BE060B500640F47 /* FirebaseDatabase */; };
+		D18DB7352BE060B500640F47 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB7342BE060B500640F47 /* FirebaseFirestore */; };
+		D18DB7382BE0619200640F47 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB7372BE0619200640F47 /* GoogleSignIn */; };
+		D18DB73A2BE0619200640F47 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D18DB7392BE0619200640F47 /* GoogleSignInSwift */; };
+		D18DB73D2BE0634200640F47 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DB73C2BE0634200640F47 /* Authentication.swift */; };
+		D18DB73F2BE0636800640F47 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DB73E2BE0636800640F47 /* Login.swift */; };
+		D1C4D8D72BE0AC2A00E62476 /* CourseMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C4D8D62BE0AC2A00E62476 /* CourseMap.swift */; };
+		D1C4D8D92BE0ADF500E62476 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C4D8D82BE0ADF400E62476 /* Stats.swift */; };
+		D1C4D8DB2BE0AEE700E62476 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C4D8DA2BE0AEE700E62476 /* MainTabView.swift */; };
+		D1C4D8DD2BE0C1BA00E62476 /* CourseMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C4D8DC2BE0C1BA00E62476 /* CourseMapViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D15CC9822BE0ED3C001DEA58 /* ScorecardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardView.swift; sourceTree = "<group>"; };
+		D15CC9842BE19C35001DEA58 /* ScorecardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardViewModel.swift; sourceTree = "<group>"; };
+		D15CC9882BE1E85B001DEA58 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		D15CC98A2BE20E6B001DEA58 /* FinalProject342.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalProject342.entitlements; sourceTree = "<group>"; };
+		D15CC98B2BE20F58001DEA58 /* HealthKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewModel.swift; sourceTree = "<group>"; };
+		D15CC9912BE23E1A001DEA58 /* RoundHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundHistoryView.swift; sourceTree = "<group>"; };
+		D15CC9932BE23E33001DEA58 /* RoundHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundHistoryViewModel.swift; sourceTree = "<group>"; };
+		D15CC99C2BE2F250001DEA58 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		D18DB7152BE0600B00640F47 /* FinalProject342.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject342.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18DB7182BE0600B00640F47 /* FinalProject342App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProject342App.swift; sourceTree = "<group>"; };
+		D18DB71A2BE0600B00640F47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D18DB71C2BE0600C00640F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D18DB71F2BE0600C00640F47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D18DB7292BE0602F00640F47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D18DB73B2BE0625B00640F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D18DB73C2BE0634200640F47 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D18DB73E2BE0636800640F47 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		D1C4D8D62BE0AC2A00E62476 /* CourseMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMap.swift; sourceTree = "<group>"; };
+		D1C4D8D82BE0ADF400E62476 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		D1C4D8DA2BE0AEE700E62476 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D1C4D8DC2BE0C1BA00E62476 /* CourseMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D18DB7122BE0600B00640F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18DB72F2BE060B500640F47 /* FirebaseAppCheck in Frameworks */,
+				D18DB7312BE060B500640F47 /* FirebaseAuth in Frameworks */,
+				D18DB73A2BE0619200640F47 /* GoogleSignInSwift in Frameworks */,
+				D18DB7332BE060B500640F47 /* FirebaseDatabase in Frameworks */,
+				D18DB7352BE060B500640F47 /* FirebaseFirestore in Frameworks */,
+				D18DB72D2BE060B500640F47 /* FirebaseAnalytics in Frameworks */,
+				D18DB7382BE0619200640F47 /* GoogleSignIn in Frameworks */,
+				D15CC9972BE2427B001DEA58 /* DGCharts in Frameworks */,
+				D15CC9992BE2427B001DEA58 /* DGChartsDynamic in Frameworks */,
+				D15CC9872BE1AE26001DEA58 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D18DB70C2BE0600B00640F47 = {
+			isa = PBXGroup;
+			children = (
+				D18DB7172BE0600B00640F47 /* FinalProject342 */,
+				D18DB7162BE0600B00640F47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D18DB7162BE0600B00640F47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D18DB7152BE0600B00640F47 /* FinalProject342.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D18DB7172BE0600B00640F47 /* FinalProject342 */ = {
+			isa = PBXGroup;
+			children = (
+				D15CC98A2BE20E6B001DEA58 /* FinalProject342.entitlements */,
+				D18DB73B2BE0625B00640F47 /* Info.plist */,
+				D18DB7292BE0602F00640F47 /* GoogleService-Info.plist */,
+				D18DB7282BE0602600640F47 /* View */,
+				D18DB7272BE0602000640F47 /* ViewModel */,
+				D18DB7262BE0601C00640F47 /* Model */,
+				D18DB7182BE0600B00640F47 /* FinalProject342App.swift */,
+				D18DB71A2BE0600B00640F47 /* ContentView.swift */,
+				D18DB73C2BE0634200640F47 /* Authentication.swift */,
+				D18DB71C2BE0600C00640F47 /* Assets.xcassets */,
+				D18DB71E2BE0600C00640F47 /* Preview Content */,
+			);
+			path = FinalProject342;
+			sourceTree = "<group>";
+		};
+		D18DB71E2BE0600C00640F47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D18DB71F2BE0600C00640F47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D18DB7262BE0601C00640F47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D18DB7272BE0602000640F47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4D8DC2BE0C1BA00E62476 /* CourseMapViewModel.swift */,
+				D15CC9842BE19C35001DEA58 /* ScorecardViewModel.swift */,
+				D15CC9882BE1E85B001DEA58 /* StatsViewModel.swift */,
+				D15CC98B2BE20F58001DEA58 /* HealthKitViewModel.swift */,
+				D15CC9932BE23E33001DEA58 /* RoundHistoryViewModel.swift */,
+				D15CC99C2BE2F250001DEA58 /* CalenderView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D18DB7282BE0602600640F47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D18DB73E2BE0636800640F47 /* Login.swift */,
+				D1C4D8D82BE0ADF400E62476 /* Stats.swift */,
+				D1C4D8D62BE0AC2A00E62476 /* CourseMap.swift */,
+				D1C4D8DA2BE0AEE700E62476 /* MainTabView.swift */,
+				D15CC9822BE0ED3C001DEA58 /* ScorecardView.swift */,
+				D15CC9912BE23E1A001DEA58 /* RoundHistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D18DB7142BE0600B00640F47 /* FinalProject342 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18DB7232BE0600C00640F47 /* Build configuration list for PBXNativeTarget "FinalProject342" */;
+			buildPhases = (
+				D18DB7112BE0600B00640F47 /* Sources */,
+				D18DB7122BE0600B00640F47 /* Frameworks */,
+				D18DB7132BE0600B00640F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalProject342;
+			packageProductDependencies = (
+				D18DB72C2BE060B500640F47 /* FirebaseAnalytics */,
+				D18DB72E2BE060B500640F47 /* FirebaseAppCheck */,
+				D18DB7302BE060B500640F47 /* FirebaseAuth */,
+				D18DB7322BE060B500640F47 /* FirebaseDatabase */,
+				D18DB7342BE060B500640F47 /* FirebaseFirestore */,
+				D18DB7372BE0619200640F47 /* GoogleSignIn */,
+				D18DB7392BE0619200640F47 /* GoogleSignInSwift */,
+				D15CC9862BE1AE26001DEA58 /* FirebaseFirestoreSwift */,
+				D15CC9962BE2427B001DEA58 /* DGCharts */,
+				D15CC9982BE2427B001DEA58 /* DGChartsDynamic */,
+			);
+			productName = FinalProject342;
+			productReference = D18DB7152BE0600B00640F47 /* FinalProject342.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D18DB70D2BE0600B00640F47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D18DB7142BE0600B00640F47 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = D18DB7102BE0600B00640F47 /* Build configuration list for PBXProject "FinalProject342" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D18DB70C2BE0600B00640F47;
+			packageReferences = (
+				D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D18DB7362BE0619200640F47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				D15CC9952BE2427B001DEA58 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = D18DB7162BE0600B00640F47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D18DB7142BE0600B00640F47 /* FinalProject342 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D18DB7132BE0600B00640F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18DB7202BE0600C00640F47 /* Preview Assets.xcassets in Resources */,
+				D18DB71D2BE0600C00640F47 /* Assets.xcassets in Resources */,
+				D18DB72A2BE0602F00640F47 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D18DB7112BE0600B00640F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18DB71B2BE0600B00640F47 /* ContentView.swift in Sources */,
+				D1C4D8D92BE0ADF500E62476 /* Stats.swift in Sources */,
+				D15CC9942BE23E33001DEA58 /* RoundHistoryViewModel.swift in Sources */,
+				D18DB7192BE0600B00640F47 /* FinalProject342App.swift in Sources */,
+				D1C4D8D72BE0AC2A00E62476 /* CourseMap.swift in Sources */,
+				D1C4D8DB2BE0AEE700E62476 /* MainTabView.swift in Sources */,
+				D15CC9892BE1E85B001DEA58 /* StatsViewModel.swift in Sources */,
+				D15CC9832BE0ED3C001DEA58 /* ScorecardView.swift in Sources */,
+				D18DB73D2BE0634200640F47 /* Authentication.swift in Sources */,
+				D15CC99D2BE2F251001DEA58 /* CalenderView.swift in Sources */,
+				D1C4D8DD2BE0C1BA00E62476 /* CourseMapViewModel.swift in Sources */,
+				D15CC98C2BE20F58001DEA58 /* HealthKitViewModel.swift in Sources */,
+				D18DB73F2BE0636800640F47 /* Login.swift in Sources */,
+				D15CC9922BE23E1A001DEA58 /* RoundHistoryView.swift in Sources */,
+				D15CC9852BE19C35001DEA58 /* ScorecardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D18DB7212BE0600C00640F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D18DB7222BE0600C00640F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D18DB7242BE0600C00640F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinalProject342/FinalProject342.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinalProject342/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProject342/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GolfMate;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To share the health data and show it in the application.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To read the health data and show it in the application.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to access your location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.FinalProject342;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D18DB7252BE0600C00640F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinalProject342/FinalProject342.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinalProject342/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProject342/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GolfMate;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To share the health data and show it in the application.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To read the health data and show it in the application.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to access your location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.FinalProject342;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D18DB7102BE0600B00640F47 /* Build configuration list for PBXProject "FinalProject342" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18DB7212BE0600C00640F47 /* Debug */,
+				D18DB7222BE0600C00640F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18DB7232BE0600C00640F47 /* Build configuration list for PBXNativeTarget "FinalProject342" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18DB7242BE0600C00640F47 /* Debug */,
+				D18DB7252BE0600C00640F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D15CC9952BE2427B001DEA58 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		D18DB7362BE0619200640F47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D15CC9862BE1AE26001DEA58 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		D15CC9962BE2427B001DEA58 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15CC9952BE2427B001DEA58 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		D15CC9982BE2427B001DEA58 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15CC9952BE2427B001DEA58 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+		D18DB72C2BE060B500640F47 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D18DB72E2BE060B500640F47 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		D18DB7302BE060B500640F47 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D18DB7322BE060B500640F47 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		D18DB7342BE060B500640F47 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB72B2BE060B500640F47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D18DB7372BE0619200640F47 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB7362BE0619200640F47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		D18DB7392BE0619200640F47 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18DB7362BE0619200640F47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D18DB70D2BE0600B00640F47 /* Project object */;
+}
